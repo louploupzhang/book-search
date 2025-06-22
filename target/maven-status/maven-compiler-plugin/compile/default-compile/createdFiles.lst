@@ -1,2 +1,3 @@
 org\louploup\App.class
+org\louploup\DbImporter.class
 org\louploup\HelloController.class
