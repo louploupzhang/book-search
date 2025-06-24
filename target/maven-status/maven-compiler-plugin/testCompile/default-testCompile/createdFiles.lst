@@ -1,2 +1,3 @@
+org\louploup\service\BookServiceTest.class
 org\louploup\repository\BookRepositoryTest.class
 org\louploup\AppTest.class
