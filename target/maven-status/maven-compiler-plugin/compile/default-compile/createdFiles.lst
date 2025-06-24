@@ -1,3 +1,5 @@
 org\louploup\App.class
+org\louploup\entity\Book.class
+org\louploup\repository\BookRepository.class
 org\louploup\DbImporter.class
 org\louploup\HelloController.class

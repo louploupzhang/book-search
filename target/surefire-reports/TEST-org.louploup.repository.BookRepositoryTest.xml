@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="org.louploup.repository.BookRepositoryTest" time="4.37" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="D:\Dev_Projects\Copilot_Projects\book-search\target\test-classes;D:\Dev_Projects\Copilot_Projects\book-search\target\classes;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-web\3.2.6\spring-boot-starter-web-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter\3.2.6\spring-boot-starter-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot\3.2.6\spring-boot-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-autoconfigure\3.2.6\spring-boot-autoconfigure-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-logging\3.2.6\spring-boot-starter-logging-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-json\3.2.6\spring-boot-starter-json-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-tomcat\3.2.6\spring-boot-starter-tomcat-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\tomcat\embed\tomcat-embed-core\10.1.24\tomcat-embed-core-10.1.24.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\tomcat\embed\tomcat-embed-el\10.1.24\tomcat-embed-el-10.1.24.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.24\tomcat-embed-websocket-10.1.24.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-web\6.1.8\spring-web-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-beans\6.1.8\spring-beans-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\io\micrometer\micrometer-observation\1.12.6\micrometer-observation-1.12.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\io\micrometer\micrometer-commons\1.12.6\micrometer-commons-1.12.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-webmvc\6.1.8\spring-webmvc-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-aop\6.1.8\spring-aop-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-context\6.1.8\spring-context-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-expression\6.1.8\spring-expression-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-test\3.2.6\spring-boot-starter-test-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-test\3.2.6\spring-boot-test-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-test-autoconfigure\3.2.6\spring-boot-test-autoconfigure-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\bytebuddy\byte-buddy\1.14.16\byte-buddy-1.14.16.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\jupiter\junit-jupiter\5.11.0\junit-jupiter-5.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\bytebuddy\byte-buddy-agent\1.14.16\byte-buddy-agent-1.14.16.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-core\6.1.8\spring-core-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-jcl\6.1.8\spring-jcl-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-test\6.1.8\spring-test-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-data-jpa\3.2.6\spring-boot-starter-data-jpa-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-aop\3.2.6\spring-boot-starter-aop-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-jdbc\3.2.6\spring-boot-starter-jdbc-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-jdbc\6.1.8\spring-jdbc-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\hibernate\orm\hibernate-core\6.4.8.Final\hibernate-core-6.4.8.Final.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\data\spring-data-jpa\3.2.6\spring-data-jpa-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\data\spring-data-commons\3.2.6\spring-data-commons-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-orm\6.1.8\spring-orm-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-tx\6.1.8\spring-tx-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-aspects\6.1.8\spring-aspects-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\postgresql\postgresql\42.7.7\postgresql-42.7.7.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\checkerframework\checker-qual\3.49.3\checker-qual-3.49.3.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\opencsv\opencsv\5.10\opencsv-5.10.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\commons\commons-text\1.13.0\commons-text-1.13.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\commons-beanutils\commons-beanutils\1.10.0\commons-beanutils-1.10.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\commons-logging\commons-logging\1.3.4\commons-logging-1.3.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Toronto"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="D:\Dev_Tools\JDKs\24\bin"/>
+    <property name="sun.java.command" value="C:\Users\Louploup\AppData\Local\Temp\surefire16093341907332882468\surefirebooter-20250624002245278_3.jar C:\Users\Louploup\AppData\Local\Temp\surefire16093341907332882468 2025-06-24T00-22-45_201-jvmRun1 surefire-20250624002245278_1tmp surefire_0-20250624002245278_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Dev_Projects\Copilot_Projects\book-search\target\test-classes;D:\Dev_Projects\Copilot_Projects\book-search\target\classes;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-web\3.2.6\spring-boot-starter-web-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter\3.2.6\spring-boot-starter-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot\3.2.6\spring-boot-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-autoconfigure\3.2.6\spring-boot-autoconfigure-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-logging\3.2.6\spring-boot-starter-logging-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-json\3.2.6\spring-boot-starter-json-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-tomcat\3.2.6\spring-boot-starter-tomcat-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\tomcat\embed\tomcat-embed-core\10.1.24\tomcat-embed-core-10.1.24.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\tomcat\embed\tomcat-embed-el\10.1.24\tomcat-embed-el-10.1.24.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.24\tomcat-embed-websocket-10.1.24.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-web\6.1.8\spring-web-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-beans\6.1.8\spring-beans-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\io\micrometer\micrometer-observation\1.12.6\micrometer-observation-1.12.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\io\micrometer\micrometer-commons\1.12.6\micrometer-commons-1.12.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-webmvc\6.1.8\spring-webmvc-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-aop\6.1.8\spring-aop-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-context\6.1.8\spring-context-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-expression\6.1.8\spring-expression-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-test\3.2.6\spring-boot-starter-test-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-test\3.2.6\spring-boot-test-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-test-autoconfigure\3.2.6\spring-boot-test-autoconfigure-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\ow2\asm\asm\9.6\asm-9.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\bytebuddy\byte-buddy\1.14.16\byte-buddy-1.14.16.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\jupiter\junit-jupiter\5.11.0\junit-jupiter-5.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\bytebuddy\byte-buddy-agent\1.14.16\byte-buddy-agent-1.14.16.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\objenesis\objenesis\3.3\objenesis-3.3.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-core\6.1.8\spring-core-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-jcl\6.1.8\spring-jcl-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-test\6.1.8\spring-test-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-data-jpa\3.2.6\spring-boot-starter-data-jpa-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-aop\3.2.6\spring-boot-starter-aop-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\boot\spring-boot-starter-jdbc\3.2.6\spring-boot-starter-jdbc-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-jdbc\6.1.8\spring-jdbc-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\hibernate\orm\hibernate-core\6.4.8.Final\hibernate-core-6.4.8.Final.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\data\spring-data-jpa\3.2.6\spring-data-jpa-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\data\spring-data-commons\3.2.6\spring-data-commons-3.2.6.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-orm\6.1.8\spring-orm-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-tx\6.1.8\spring-tx-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\springframework\spring-aspects\6.1.8\spring-aspects-6.1.8.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\postgresql\postgresql\42.7.7\postgresql-42.7.7.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\checkerframework\checker-qual\3.49.3\checker-qual-3.49.3.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\com\opencsv\opencsv\5.10\opencsv-5.10.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\commons\commons-text\1.13.0\commons-text-1.13.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\commons-beanutils\commons-beanutils\1.10.0\commons-beanutils-1.10.0.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\commons-logging\commons-logging\1.3.4\commons-logging-1.3.4.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Louploup"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="D:\Dev_Tools\JDKs\24"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Dev_Projects\Copilot_Projects\book-search"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\Louploup\AppData\Local\Temp\surefire16093341907332882468\surefirebooter-20250624002245278_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="Louploup"/>
+    <property name="stdout.encoding" value="GBK"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Louploup\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="D:\Dev_Projects\Copilot_Projects\book-search"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="29512"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\Dev_Tools\JDKs\24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Dev_Tools\JDKs\jdk\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.5\libnvvp;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;D:\Dev_Tools\Maven\apache-maven-3.9.6\bin;D:\Dev_Tools\Git\cmd;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.2.0\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Dev_Tools\nodejs\;;C:\Program Files\Docker\Docker\resources\bin;D:\Dev_Tools\Python\3.10.6\Scripts\;D:\Dev_Tools\Python\3.10.6\;C:\Users\Louploup\AppData\Local\Microsoft\WindowsApps;D:\Development\IntelliJ IDEA 2023.3.3\bin;;D:\Dev_Tools\Microsoft VS Code\bin;C:\Users\Louploup\AppData\Local\GitHubDesktop\bin;D:\Dev_Tools\MongoDB\Shell\;C:\Users\Louploup\AppData\Roaming\npm;D:\Dev_Tools\Microsoft VS Code Insiders\bin;c:\Users\Louploup\AppData\Roaming\Code - Insiders\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="GBK"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="testSearchBooks" classname="org.louploup.repository.BookRepositoryTest" time="0.471">
+    <system-out><![CDATA[00:22:47.735 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.louploup.repository.BookRepositoryTest]: BookRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:22:48.061 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.louploup.App for test class org.louploup.repository.BookRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.6)
+
+2025-06-24T00:22:49.161-04:00  INFO 29512 --- [           main] o.l.repository.BookRepositoryTest        : Starting BookRepositoryTest using Java 24.0.1 with PID 29512 (started by Louploup in D:\Dev_Projects\Copilot_Projects\book-search)
+2025-06-24T00:22:49.163-04:00  INFO 29512 --- [           main] o.l.repository.BookRepositoryTest        : No active profile set, falling back to 1 default profile: "default"
+2025-06-24T00:22:49.783-04:00  INFO 29512 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-24T00:22:49.811-04:00  INFO 29512 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2025-06-24T00:22:50.068-04:00  INFO 29512 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-24T00:22:50.104-04:00  INFO 29512 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.8.Final
+2025-06-24T00:22:50.124-04:00  INFO 29512 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-24T00:22:50.340-04:00  INFO 29512 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-24T00:22:50.356-04:00  INFO 29512 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-24T00:22:50.488-04:00  INFO 29512 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d293993
+2025-06-24T00:22:50.489-04:00  INFO 29512 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-24T00:22:50.510-04:00  WARN 29512 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-24T00:22:51.032-04:00  INFO 29512 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-24T00:22:51.034-04:00  INFO 29512 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-24T00:22:51.231-04:00  INFO 29512 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-24T00:22:51.268-04:00  INFO 29512 --- [           main] o.l.repository.BookRepositoryTest        : Started BookRepositoryTest in 2.976 seconds (process running for 4.414)
+Hibernate: SELECT * FROM books WHERE search_vector @@ to_tsquery(?)
+>>> Found book: Understanding Algorithms in Practice with ID: 261
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 272
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 287
+>>> Found book: Exploring Algorithms for Beginners with ID: 308
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 311
+>>> Found book: Exploring Algorithms with Python with ID: 331
+>>> Found book: Understanding Algorithms and Applications with ID: 386
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 392
+>>> Found book: Mastering Algorithms for Professionals with ID: 432
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 459
+>>> Found book: The Future of Algorithms and Applications with ID: 471
+>>> Found book: Mastering Algorithms with Python with ID: 609
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 485
+>>> Found book: Innovations in Algorithms for Beginners with ID: 525
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 535
+>>> Found book: Innovations in Algorithms and Applications with ID: 538
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 563
+>>> Found book: Mastering Algorithms from Scratch with ID: 565
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 569
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 587
+>>> Found book: Mastering Algorithms and Applications with ID: 659
+>>> Found book: Understanding Algorithms from Scratch with ID: 621
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 696
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 809
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 953
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 1005
+>>> Found book: Innovations in Algorithms for Professionals with ID: 1072
+>>> Found book: Understanding Algorithms with Python with ID: 1165
+>>> Found book: The Future of Algorithms with Python with ID: 1168
+>>> Found book: Understanding Algorithms for Beginners with ID: 1200
+>>> Found book: Mastering Algorithms in the Modern World with ID: 24
+>>> Found book: Mastering Algorithms in the Modern World with ID: 36
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 40
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 43
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 45
+>>> Found book: The Future of Algorithms in the Modern World with ID: 47
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 96
+>>> Found book: Innovations in Algorithms in Practice with ID: 98
+>>> Found book: The Future of Algorithms and Future Trends with ID: 412
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 555
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 590
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 591
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 642
+>>> Found book: Exploring Algorithms in the Modern World with ID: 678
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 736
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 803
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 895
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 1083
+>>> Found book: Innovations in Algorithms for Professionals with ID: 1107
+>>> Found book: Understanding Algorithms in Practice with ID: 1160
+>>> Found book: Understanding Algorithms and Applications with ID: 1191
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 1506
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 1531
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 1565
+>>> Found book: Exploring Algorithms from Scratch with ID: 1599
+>>> Found book: Mastering Algorithms in the Modern World with ID: 1620
+>>> Found book: Understanding Algorithms for Professionals with ID: 1714
+>>> Found book: Understanding Algorithms and Future Trends with ID: 137
+>>> Found book: The Future of Algorithms and Future Trends with ID: 151
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 159
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 170
+>>> Found book: The Future of Algorithms and Applications with ID: 182
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 250
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 657
+>>> Found book: Understanding Algorithms and Beyond with ID: 650
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 693
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 720
+>>> Found book: Exploring Algorithms in the Modern World with ID: 771
+>>> Found book: Mastering Algorithms and Beyond with ID: 789
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 819
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 852
+>>> Found book: The Future of Algorithms for Professionals with ID: 1206
+>>> Found book: Exploring Algorithms for Beginners with ID: 1252
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 1371
+>>> Found book: Mastering Algorithms and Future Trends with ID: 1373
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 1542
+>>> Found book: The Future of Algorithms with Python with ID: 1641
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 1674
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 1887
+>>> Found book: Innovations in Algorithms for Everyone with ID: 1888
+>>> Found book: The Future of Algorithms for Beginners with ID: 1932
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 1996
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 2021
+>>> Found book: Mastering Algorithms in the Modern World with ID: 2137
+>>> Found book: The Future of Algorithms in Practice with ID: 1242
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 1277
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 1286
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 1299
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 1335
+>>> Found book: Exploring Algorithms for Professionals with ID: 1409
+>>> Found book: The Future of Algorithms from Scratch with ID: 1606
+>>> Found book: Innovations in Algorithms in Practice with ID: 1633
+>>> Found book: The Future of Algorithms for Professionals with ID: 1648
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 1655
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 1737
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 1764
+>>> Found book: Understanding Algorithms and Future Trends with ID: 1844
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 1850
+>>> Found book: Exploring Algorithms and Applications with ID: 1916
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 1943
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 2029
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 2049
+>>> Found book: Innovations in Algorithms and Applications with ID: 2071
+>>> Found book: The Future of Algorithms with Python with ID: 2118
+>>> Found book: Innovations in Algorithms for Professionals with ID: 2245
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 2249
+>>> Found book: The Future of Algorithms and Future Trends with ID: 2332
+>>> Found book: Innovations in Algorithms for Beginners with ID: 2360
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 2441
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 2467
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 2708
+>>> Found book: Mastering Algorithms with Python with ID: 2729
+>>> Found book: Mastering Algorithms from Scratch with ID: 3010
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 1729
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 1827
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 1830
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 1858
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 1860
+>>> Found book: The Future of Algorithms for Professionals with ID: 1880
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 1907
+>>> Found book: Mastering Algorithms and Applications with ID: 1980
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 1982
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 2039
+>>> Found book: Mastering Algorithms and Beyond with ID: 2185
+>>> Found book: Innovations in Algorithms for Beginners with ID: 2199
+>>> Found book: The Essentials of Algorithms and Applications with ID: 2232
+>>> Found book: Innovations in Algorithms for Professionals with ID: 2377
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 2380
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 2481
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 2504
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 2559
+>>> Found book: Understanding Algorithms and Applications with ID: 2684
+>>> Found book: Exploring Algorithms in Practice with ID: 2717
+>>> Found book: Mastering Algorithms with Python with ID: 2756
+>>> Found book: The Essentials of Algorithms and Applications with ID: 3155
+>>> Found book: The Future of Algorithms for Professionals with ID: 3244
+>>> Found book: Innovations in Algorithms in Practice with ID: 3289
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 3290
+>>> Found book: Mastering Algorithms for Professionals with ID: 3367
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 3393
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 3502
+>>> Found book: Mastering Algorithms with Python with ID: 2153
+>>> Found book: Exploring Algorithms with Python with ID: 2176
+>>> Found book: The Future of Algorithms for Beginners with ID: 2264
+>>> Found book: Exploring Algorithms from Scratch with ID: 2271
+>>> Found book: The Future of Algorithms for Beginners with ID: 2412
+>>> Found book: Exploring Algorithms for Beginners with ID: 2460
+>>> Found book: The Future of Algorithms and Future Trends with ID: 2537
+>>> Found book: Exploring Algorithms and Applications with ID: 2568
+>>> Found book: The Future of Algorithms for Professionals with ID: 2653
+>>> Found book: Innovations in Algorithms for Professionals with ID: 2658
+>>> Found book: Exploring Algorithms and Beyond with ID: 2724
+>>> Found book: Innovations in Algorithms for Professionals with ID: 2751
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 2834
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 2949
+>>> Found book: Innovations in Algorithms in Practice with ID: 3073
+>>> Found book: The Essentials of Algorithms and Applications with ID: 3127
+>>> Found book: Mastering Algorithms for Professionals with ID: 3177
+>>> Found book: Understanding Algorithms and Applications with ID: 3206
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 3414
+>>> Found book: Exploring Algorithms from Scratch with ID: 3433
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 3522
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 3526
+>>> Found book: Mastering Algorithms and Future Trends with ID: 3818
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 3901
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 2791
+>>> Found book: Understanding Algorithms in Practice with ID: 2824
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 2849
+>>> Found book: Understanding Algorithms for Professionals with ID: 2879
+>>> Found book: Exploring Algorithms and Beyond with ID: 3021
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 3064
+>>> Found book: Exploring Algorithms for Beginners with ID: 7036
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 3122
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 3140
+>>> Found book: Understanding Algorithms from Scratch with ID: 3163
+>>> Found book: Mastering Algorithms from Scratch with ID: 3170
+>>> Found book: The Future of Algorithms from Scratch with ID: 7189
+>>> Found book: Mastering Algorithms and Applications with ID: 3294
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 3343
+>>> Found book: Mastering Algorithms and Beyond with ID: 3348
+>>> Found book: Mastering Algorithms for Professionals with ID: 3374
+>>> Found book: Understanding Algorithms and Beyond with ID: 3441
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 3533
+>>> Found book: Mastering Algorithms with Python with ID: 3534
+>>> Found book: Exploring Algorithms with Python with ID: 3592
+>>> Found book: The Essentials of Algorithms in Practice with ID: 3654
+>>> Found book: Understanding Algorithms and Beyond with ID: 3749
+>>> Found book: Mastering Algorithms and Future Trends with ID: 3833
+>>> Found book: The Future of Algorithms and Applications with ID: 3924
+>>> Found book: Understanding Algorithms for Professionals with ID: 4176
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 4281
+>>> Found book: Exploring Algorithms and Beyond with ID: 4337
+>>> Found book: Mastering Algorithms and Applications with ID: 3459
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 3516
+>>> Found book: Understanding Algorithms and Beyond with ID: 3520
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 3541
+>>> Found book: Mastering Algorithms from Scratch with ID: 3546
+>>> Found book: Innovations in Algorithms in Practice with ID: 3636
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 3657
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 3660
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 3663
+>>> Found book: The Future of Algorithms in Practice with ID: 3702
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 3738
+>>> Found book: Exploring Algorithms from Scratch with ID: 3822
+>>> Found book: Innovations in Algorithms and Applications with ID: 3875
+>>> Found book: Understanding Algorithms for Professionals with ID: 3988
+>>> Found book: Exploring Algorithms and Beyond with ID: 4076
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 4191
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 4215
+>>> Found book: Mastering Algorithms for Beginners with ID: 4248
+>>> Found book: Understanding Algorithms for Beginners with ID: 4269
+>>> Found book: Mastering Algorithms and Applications with ID: 8478
+>>> Found book: Understanding Algorithms with Python with ID: 4320
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 4515
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 4542
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 4610
+>>> Found book: Understanding Algorithms with Python with ID: 3863
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 3977
+>>> Found book: Understanding Algorithms in Practice with ID: 3978
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 4001
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 4020
+>>> Found book: Mastering Algorithms and Beyond with ID: 4034
+>>> Found book: Exploring Algorithms and Beyond with ID: 4063
+>>> Found book: Exploring Algorithms for Everyone with ID: 4066
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 4112
+>>> Found book: Innovations in Algorithms with Python with ID: 4141
+>>> Found book: Mastering Algorithms and Applications with ID: 4145
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 4171
+>>> Found book: The Essentials of Algorithms and Applications with ID: 4209
+>>> Found book: The Future of Algorithms and Future Trends with ID: 4257
+>>> Found book: Innovations in Algorithms and Applications with ID: 4314
+>>> Found book: The Future of Algorithms and Applications with ID: 4316
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 4341
+>>> Found book: Exploring Algorithms and Applications with ID: 4432
+>>> Found book: The Future of Algorithms and Future Trends with ID: 8737
+>>> Found book: Mastering Algorithms in Practice with ID: 4497
+>>> Found book: Understanding Algorithms for Beginners with ID: 4587
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 4638
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 4910
+>>> Found book: Understanding Algorithms and Future Trends with ID: 4914
+>>> Found book: The Future of Algorithms and Future Trends with ID: 4983
+>>> Found book: Exploring Algorithms with Python with ID: 4985
+>>> Found book: The Future of Algorithms and Future Trends with ID: 5074
+>>> Found book: Exploring Algorithms for Everyone with ID: 5159
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 5248
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 5270
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 5329
+>>> Found book: Understanding Algorithms from Scratch with ID: 5431
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 5507
+>>> Found book: Understanding Algorithms from Scratch with ID: 5604
+>>> Found book: Mastering Algorithms from Scratch with ID: 5634
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 5664
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 5693
+>>> Found book: Exploring Algorithms for Professionals with ID: 5728
+>>> Found book: The Future of Algorithms and Applications with ID: 5718
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 4600
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 4605
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 4657
+>>> Found book: Innovations in Algorithms for Professionals with ID: 4727
+>>> Found book: Understanding Algorithms and Future Trends with ID: 4793
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 4814
+>>> Found book: Mastering Algorithms for Professionals with ID: 4932
+>>> Found book: Innovations in Algorithms for Beginners with ID: 5171
+>>> Found book: The Future of Algorithms from Scratch with ID: 5199
+>>> Found book: The Future of Algorithms for Professionals with ID: 5201
+>>> Found book: The Future of Algorithms in Practice with ID: 5279
+>>> Found book: Innovations in Algorithms in Practice with ID: 5309
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 5333
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 5362
+>>> Found book: Understanding Algorithms and Future Trends with ID: 5364
+>>> Found book: Innovations in Algorithms for Everyone with ID: 5403
+>>> Found book: The Future of Algorithms with Python with ID: 5440
+>>> Found book: Exploring Algorithms and Applications with ID: 5466
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 5618
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 5703
+>>> Found book: Understanding Algorithms and Future Trends with ID: 5901
+>>> Found book: Innovations in Algorithms and Applications with ID: 5921
+>>> Found book: Exploring Algorithms for Beginners with ID: 6045
+>>> Found book: Innovations in Algorithms and Applications with ID: 4329
+>>> Found book: Mastering Algorithms and Applications with ID: 4434
+>>> Found book: Mastering Algorithms from Scratch with ID: 4552
+>>> Found book: Exploring Algorithms for Professionals with ID: 4622
+>>> Found book: Mastering Algorithms and Future Trends with ID: 4648
+>>> Found book: The Future of Algorithms in the Modern World with ID: 4701
+>>> Found book: Innovations in Algorithms with Python with ID: 4721
+>>> Found book: Exploring Algorithms with Python with ID: 4808
+>>> Found book: The Future of Algorithms for Professionals with ID: 5025
+>>> Found book: Exploring Algorithms for Professionals with ID: 5207
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 5209
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 5289
+>>> Found book: Innovations in Algorithms for Everyone with ID: 5373
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 5444
+>>> Found book: Understanding Algorithms in Practice with ID: 5495
+>>> Found book: Exploring Algorithms for Beginners with ID: 5497
+>>> Found book: Mastering Algorithms and Applications with ID: 5503
+>>> Found book: Mastering Algorithms from Scratch with ID: 5524
+>>> Found book: Exploring Algorithms in Practice with ID: 5597
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 5655
+>>> Found book: Exploring Algorithms for Professionals with ID: 5777
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 6024
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 6221
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 6292
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 6374
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 6403
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 6469
+>>> Found book: Mastering Algorithms for Beginners with ID: 6692
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 5755
+>>> Found book: Understanding Algorithms and Future Trends with ID: 5822
+>>> Found book: Innovations in Algorithms for Beginners with ID: 5884
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 5889
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 5913
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 5946
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 6071
+>>> Found book: The Future of Algorithms and Applications with ID: 6109
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 6190
+>>> Found book: Understanding Algorithms and Future Trends with ID: 6242
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 6269
+>>> Found book: Mastering Algorithms and Applications with ID: 6273
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 6344
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 6381
+>>> Found book: Mastering Algorithms and Future Trends with ID: 6513
+>>> Found book: Understanding Algorithms for Professionals with ID: 6540
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 6623
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 6650
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 6672
+>>> Found book: The Essentials of Algorithms in Practice with ID: 6987
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 6031
+>>> Found book: Understanding Algorithms in Practice with ID: 6103
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 6174
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 6179
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 6192
+>>> Found book: Exploring Algorithms for Beginners with ID: 6262
+>>> Found book: Exploring Algorithms and Applications with ID: 6284
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 6336
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 6337
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 6364
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 6449
+>>> Found book: Innovations in Algorithms for Professionals with ID: 6490
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 6564
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 6683
+>>> Found book: Exploring Algorithms and Applications with ID: 6710
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 6772
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 6866
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 6869
+>>> Found book: Exploring Algorithms and Applications with ID: 6917
+>>> Found book: Innovations in Algorithms for Everyone with ID: 6936
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 6939
+>>> Found book: Understanding Algorithms for Professionals with ID: 7252
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 7360
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 7416
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 7423
+>>> Found book: Exploring Algorithms for Everyone with ID: 6701
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 6761
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 6800
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 6850
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 6930
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 6953
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 6975
+>>> Found book: Mastering Algorithms and Future Trends with ID: 6976
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 7858
+>>> Found book: Understanding Algorithms with Python with ID: 7073
+>>> Found book: Exploring Algorithms with Python with ID: 7084
+>>> Found book: Understanding Algorithms for Beginners with ID: 7085
+>>> Found book: Exploring Algorithms from Scratch with ID: 7121
+>>> Found book: The Future of Algorithms and Applications with ID: 7126
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 7183
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 7330
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 7369
+>>> Found book: Mastering Algorithms in Practice with ID: 7370
+>>> Found book: The Essentials of Algorithms and Applications with ID: 7389
+>>> Found book: Exploring Algorithms in the Modern World with ID: 7411
+>>> Found book: The Essentials of Algorithms and Applications with ID: 7414
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 7664
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 7767
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 7882
+>>> Found book: Innovations in Algorithms in Practice with ID: 7915
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 7918
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 8097
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 8197
+>>> Found book: Innovations in Algorithms with Python with ID: 6996
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 6997
+>>> Found book: The Future of Algorithms for Beginners with ID: 7178
+>>> Found book: Mastering Algorithms for Professionals with ID: 7322
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 7403
+>>> Found book: Understanding Algorithms from Scratch with ID: 7430
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 7478
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 7494
+>>> Found book: Mastering Algorithms for Professionals with ID: 7533
+>>> Found book: Understanding Algorithms in Practice with ID: 7604
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 7631
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 7727
+>>> Found book: Innovations in Algorithms for Everyone with ID: 7712
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 7745
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 7818
+>>> Found book: Exploring Algorithms for Beginners with ID: 7872
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 8032
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 8089
+>>> Found book: Innovations in Algorithms in Practice with ID: 8114
+>>> Found book: Innovations in Algorithms for Beginners with ID: 8116
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 8188
+>>> Found book: The Future of Algorithms for Professionals with ID: 8334
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 8409
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 8417
+>>> Found book: The Future of Algorithms for Beginners with ID: 7487
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 7509
+>>> Found book: Understanding Algorithms for Beginners with ID: 7561
+>>> Found book: The Future of Algorithms for Beginners with ID: 7619
+>>> Found book: Mastering Algorithms and Future Trends with ID: 7644
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 7780
+>>> Found book: Mastering Algorithms from Scratch with ID: 7869
+>>> Found book: Exploring Algorithms and Applications with ID: 7948
+>>> Found book: Innovations in Algorithms for Professionals with ID: 7972
+>>> Found book: Understanding Algorithms and Applications with ID: 8019
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 8076
+>>> Found book: Exploring Algorithms with Python with ID: 8104
+>>> Found book: Understanding Algorithms for Beginners with ID: 8161
+>>> Found book: The Future of Algorithms and Applications with ID: 8180
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 8260
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 8268
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 8295
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 8354
+>>> Found book: Mastering Algorithms and Future Trends with ID: 8380
+>>> Found book: Understanding Algorithms with Python with ID: 8407
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 8408
+>>> Found book: The Future of Algorithms for Professionals with ID: 8567
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 8590
+>>> Found book: The Essentials of Algorithms in Practice with ID: 8595
+>>> Found book: Mastering Algorithms for Professionals with ID: 8965
+>>> Found book: Innovations in Algorithms and Applications with ID: 8191
+>>> Found book: The Future of Algorithms with Python with ID: 8253
+>>> Found book: The Future of Algorithms for Professionals with ID: 8259
+>>> Found book: Understanding Algorithms from Scratch with ID: 8271
+>>> Found book: Innovations in Algorithms for Everyone with ID: 8287
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 8322
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 8363
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 8388
+>>> Found book: The Essentials of Algorithms in Practice with ID: 8392
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 8470
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 8494
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 8523
+>>> Found book: Exploring Algorithms with Python with ID: 8526
+>>> Found book: Exploring Algorithms and Applications with ID: 8540
+>>> Found book: Innovations in Algorithms for Everyone with ID: 8542
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 8544
+>>> Found book: Innovations in Algorithms in Practice with ID: 8546
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 8639
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 8664
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 8770
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 8849
+>>> Found book: Exploring Algorithms with Python with ID: 8966
+>>> Found book: The Future of Algorithms from Scratch with ID: 8967
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 8995
+>>> Found book: The Future of Algorithms from Scratch with ID: 8998
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 8999
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 9136
+>>> Found book: Exploring Algorithms in the Modern World with ID: 8446
+>>> Found book: Exploring Algorithms and Beyond with ID: 8513
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 8551
+>>> Found book: The Future of Algorithms from Scratch with ID: 8553
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 8558
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 8584
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 8629
+>>> Found book: Mastering Algorithms for Professionals with ID: 8675
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 8709
+>>> Found book: Innovations in Algorithms for Everyone with ID: 8753
+>>> Found book: Innovations in Algorithms for Beginners with ID: 8857
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 8859
+>>> Found book: Innovations in Algorithms and Applications with ID: 8863
+>>> Found book: Understanding Algorithms from Scratch with ID: 8979
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 9053
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 9054
+>>> Found book: The Future of Algorithms from Scratch with ID: 9055
+>>> Found book: Mastering Algorithms in Practice with ID: 9071
+>>> Found book: Innovations in Algorithms in Practice with ID: 9110
+>>> Found book: Exploring Algorithms and Beyond with ID: 9153
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 9280
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 9371
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 9458
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 9548
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 9606
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 9834
+>>> Found book: Innovations in Algorithms in Practice with ID: 9917
+>>> Found book: Exploring Algorithms for Everyone with ID: 10103
+>>> Found book: Understanding Algorithms for Professionals with ID: 9942
+>>> Found book: Innovations in Algorithms for Everyone with ID: 9999
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 10071
+>>> Found book: Exploring Algorithms from Scratch with ID: 16621
+>>> Found book: Exploring Algorithms and Applications with ID: 10177
+>>> Found book: Exploring Algorithms from Scratch with ID: 16704
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 10404
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 9317
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 9320
+>>> Found book: Mastering Algorithms and Future Trends with ID: 9333
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 9447
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 9472
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 9479
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 9535
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 9560
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 9585
+>>> Found book: The Future of Algorithms for Professionals with ID: 9700
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 9727
+>>> Found book: Understanding Algorithms and Future Trends with ID: 9921
+>>> Found book: Exploring Algorithms in the Modern World with ID: 9947
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 10080
+>>> Found book: The Future of Algorithms for Beginners with ID: 10185
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 10189
+>>> Found book: Understanding Algorithms for Professionals with ID: 10210
+>>> Found book: Exploring Algorithms for Beginners with ID: 10238
+>>> Found book: The Future of Algorithms and Applications with ID: 10260
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 10342
+>>> Found book: The Essentials of Algorithms and Applications with ID: 10395
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 10407
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 10535
+>>> Found book: Mastering Algorithms in the Modern World with ID: 10565
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 10613
+>>> Found book: The Future of Algorithms in Practice with ID: 10778
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 8903
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 9050
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 9084
+>>> Found book: Exploring Algorithms for Beginners with ID: 9102
+>>> Found book: The Future of Algorithms and Applications with ID: 9210
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 9300
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 9735
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 9877
+>>> Found book: Exploring Algorithms in Practice with ID: 9934
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 9987
+>>> Found book: Exploring Algorithms with Python with ID: 10038
+>>> Found book: Exploring Algorithms in Practice with ID: 10083
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 10114
+>>> Found book: Understanding Algorithms and Future Trends with ID: 10144
+>>> Found book: The Future of Algorithms and Future Trends with ID: 10215
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 10203
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 10329
+>>> Found book: Innovations in Algorithms for Everyone with ID: 10433
+>>> Found book: Understanding Algorithms for Beginners with ID: 10438
+>>> Found book: The Essentials of Algorithms and Applications with ID: 10675
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 10707
+>>> Found book: Exploring Algorithms from Scratch with ID: 10898
+>>> Found book: Mastering Algorithms from Scratch with ID: 10901
+>>> Found book: The Future of Algorithms with Python with ID: 10903
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 10982
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 11001
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 11022
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 11024
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 11150
+>>> Found book: Understanding Algorithms and Future Trends with ID: 11175
+>>> Found book: Mastering Algorithms and Applications with ID: 11204
+>>> Found book: Understanding Algorithms for Professionals with ID: 11205
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 11269
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 11348
+>>> Found book: Mastering Algorithms and Beyond with ID: 11411
+>>> Found book: Mastering Algorithms for Beginners with ID: 11490
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 10449
+>>> Found book: The Future of Algorithms for Professionals with ID: 10471
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 10486
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 10490
+>>> Found book: The Future of Algorithms for Beginners with ID: 10529
+>>> Found book: The Complete Handbook of Algorithms for Beginners with ID: 10690
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 10741
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 17870
+>>> Found book: Exploring Algorithms for Everyone with ID: 10811
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 10821
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 10830
+>>> Found book: Mastering Algorithms and Beyond with ID: 18086
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 10858
+>>> Found book: Understanding Algorithms and Applications with ID: 10938
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 11041
+>>> Found book: Understanding Algorithms for Beginners with ID: 11191
+>>> Found book: Innovations in Algorithms for Beginners with ID: 11219
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 11338
+>>> Found book: Understanding Algorithms for Beginners with ID: 11399
+>>> Found book: Exploring Algorithms in the Modern World with ID: 11454
+>>> Found book: Understanding Algorithms from Scratch with ID: 11455
+>>> Found book: Innovations in Algorithms and Applications with ID: 11520
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 11719
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 11739
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 11757
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 11761
+>>> Found book: Understanding Algorithms and Applications with ID: 11880
+>>> Found book: Innovations in Algorithms for Professionals with ID: 11954
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 11972
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 12030
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 12063
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 12232
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 12234
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 12259
+>>> Found book: Innovations in Algorithms for Everyone with ID: 12457
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 10786
+>>> Found book: Mastering Algorithms from Scratch with ID: 10885
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 11147
+>>> Found book: The Future of Algorithms for Professionals with ID: 11194
+>>> Found book: Understanding Algorithms in Practice with ID: 11229
+>>> Found book: The Future of Algorithms for Professionals with ID: 11358
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 11442
+>>> Found book: Exploring Algorithms in the Modern World with ID: 11468
+>>> Found book: The Future of Algorithms from Scratch with ID: 11524
+>>> Found book: The Future of Algorithms in the Modern World with ID: 11571
+>>> Found book: Understanding Algorithms and Future Trends with ID: 11576
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 11577
+>>> Found book: The Essentials of Algorithms in Practice with ID: 11589
+>>> Found book: The Future of Algorithms with Python with ID: 11822
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 12158
+>>> Found book: The Essentials of Algorithms and Applications with ID: 12214
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 12240
+>>> Found book: Exploring Algorithms for Beginners with ID: 12241
+>>> Found book: Mastering Algorithms and Applications with ID: 12386
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 12387
+>>> Found book: Exploring Algorithms and Applications with ID: 11533
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 11631
+>>> Found book: Mastering Algorithms in Practice with ID: 11587
+>>> Found book: The Future of Algorithms in the Modern World with ID: 11600
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 11654
+>>> Found book: The Essentials of Algorithms in Practice with ID: 11691
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 11693
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 11736
+>>> Found book: Exploring Algorithms and Beyond with ID: 11769
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 11818
+>>> Found book: Innovations in Algorithms for Professionals with ID: 11847
+>>> Found book: Understanding Algorithms for Professionals with ID: 11927
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 11945
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 11979
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 12011
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 12043
+>>> Found book: Exploring Algorithms for Professionals with ID: 12087
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 12114
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 12146
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 12282
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 12545
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 12484
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 12769
+>>> Found book: Mastering Algorithms and Beyond with ID: 12870
+>>> Found book: Mastering Algorithms in Practice with ID: 12960
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 12986
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 13052
+>>> Found book: Understanding Algorithms and Future Trends with ID: 13104
+>>> Found book: Exploring Algorithms for Everyone with ID: 13130
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 13166
+>>> Found book: The Future of Algorithms from Scratch with ID: 13348
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 13436
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 12589
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 12623
+>>> Found book: Innovations in Algorithms and Applications with ID: 12638
+>>> Found book: Mastering Algorithms and Beyond with ID: 12640
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 12751
+>>> Found book: The Essentials of Algorithms and Applications with ID: 12755
+>>> Found book: Understanding Algorithms and Beyond with ID: 12855
+>>> Found book: Exploring Algorithms for Beginners with ID: 12910
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 13000
+>>> Found book: Understanding Algorithms for Beginners with ID: 13057
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 13138
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 13141
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 13191
+>>> Found book: Mastering Algorithms for Professionals with ID: 13275
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 13302
+>>> Found book: Mastering Algorithms in the Modern World with ID: 13354
+>>> Found book: Exploring Algorithms from Scratch with ID: 13379
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 13392
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 13398
+>>> Found book: Mastering Algorithms for Professionals with ID: 13418
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 12414
+>>> Found book: Innovations in Algorithms and Applications with ID: 12496
+>>> Found book: The Future of Algorithms and Future Trends with ID: 12574
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 12577
+>>> Found book: Mastering Algorithms for Beginners with ID: 12651
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 12611
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 12629
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 12666
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 12670
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 12684
+>>> Found book: Understanding Algorithms for Beginners with ID: 12797
+>>> Found book: Mastering Algorithms and Future Trends with ID: 12993
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 13042
+>>> Found book: The Future of Algorithms from Scratch with ID: 13096
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 13122
+>>> Found book: Exploring Algorithms for Professionals with ID: 13148
+>>> Found book: The Future of Algorithms in Practice with ID: 13265
+>>> Found book: Understanding Algorithms for Professionals with ID: 13417
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 13446
+>>> Found book: Understanding Algorithms for Professionals with ID: 13466
+>>> Found book: The Future of Algorithms with Python with ID: 13686
+>>> Found book: Understanding Algorithms and Future Trends with ID: 13762
+>>> Found book: Exploring Algorithms and Beyond with ID: 13793
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 13822
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 13824
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 13826
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 13887
+>>> Found book: The Future of Algorithms and Future Trends with ID: 13915
+>>> Found book: Innovations in Algorithms with Python with ID: 13969
+>>> Found book: Exploring Algorithms and Beyond with ID: 13998
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 14088
+>>> Found book: The Future of Algorithms from Scratch with ID: 14108
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 14206
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 14233
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 14265
+>>> Found book: Exploring Algorithms for Everyone with ID: 13475
+>>> Found book: Understanding Algorithms and Beyond with ID: 13493
+>>> Found book: Exploring Algorithms in Practice with ID: 13548
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 13568
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 13616
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 13673
+>>> Found book: The Future of Algorithms for Beginners with ID: 13677
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 13678
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 13737
+>>> Found book: Mastering Algorithms from Scratch with ID: 13740
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 13811
+>>> Found book: The Future of Algorithms for Beginners with ID: 13909
+>>> Found book: The Future of Algorithms for Beginners with ID: 13930
+>>> Found book: Mastering Algorithms and Beyond with ID: 13936
+>>> Found book: Innovations in Algorithms in Practice with ID: 14015
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 14021
+>>> Found book: Mastering Algorithms from Scratch with ID: 14130
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 14228
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 14254
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 14277
+>>> Found book: Mastering Algorithms for Professionals with ID: 14499
+>>> Found book: Innovations in Algorithms with Python with ID: 14501
+>>> Found book: Understanding Algorithms and Applications with ID: 14590
+>>> Found book: Innovations in Algorithms for Beginners with ID: 13487
+>>> Found book: The Future of Algorithms in the Modern World with ID: 13520
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 13587
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 13642
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 13713
+>>> Found book: Innovations in Algorithms with Python with ID: 13720
+>>> Found book: Exploring Algorithms from Scratch with ID: 13929
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 13978
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 13984
+>>> Found book: Understanding Algorithms from Scratch with ID: 14012
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 14221
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 14150
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 14270
+>>> Found book: The Future of Algorithms in the Modern World with ID: 14287
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 14290
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 14318
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 14354
+>>> Found book: Exploring Algorithms and Applications with ID: 14358
+>>> Found book: Understanding Algorithms for Beginners with ID: 14574
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 14577
+>>> Found book: Mastering Algorithms and Beyond with ID: 14598
+>>> Found book: Mastering Algorithms for Beginners with ID: 14824
+>>> Found book: Exploring Algorithms with Python with ID: 14897
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 14920
+>>> Found book: Innovations in Algorithms for Everyone with ID: 15005
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 15267
+>>> Found book: Exploring Algorithms and Applications with ID: 15473
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 15509
+>>> Found book: Understanding Algorithms and Future Trends with ID: 15528
+>>> Found book: Innovations in Algorithms for Everyone with ID: 15566
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 15597
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 15630
+>>> Found book: Innovations in Algorithms for Beginners with ID: 15631
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 15658
+>>> Found book: Innovations in Algorithms for Everyone with ID: 14599
+>>> Found book: Exploring Algorithms in Practice with ID: 14627
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 14647
+>>> Found book: Exploring Algorithms and Beyond with ID: 14663
+>>> Found book: Exploring Algorithms for Everyone with ID: 14685
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 14706
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 14747
+>>> Found book: Mastering Algorithms and Beyond with ID: 14855
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 14932
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 14982
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 14996
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 15201
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 15142
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 15308
+>>> Found book: The Future of Algorithms in Practice with ID: 15760
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 15336
+>>> Found book: Exploring Algorithms and Applications with ID: 15483
+>>> Found book: Innovations in Algorithms in the Modern World with ID: 15466
+>>> Found book: Mastering Algorithms for Professionals with ID: 15626
+>>> Found book: Innovations in Algorithms in Practice with ID: 15652
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 14402
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 14674
+>>> Found book: The Essentials of Algorithms in Practice with ID: 14692
+>>> Found book: Mastering Algorithms from Scratch with ID: 14790
+>>> Found book: Innovations in Algorithms with Python with ID: 14791
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 14840
+>>> Found book: Exploring Algorithms and Applications with ID: 14890
+>>> Found book: The Essentials of Algorithms and Future Trends with ID: 14927
+>>> Found book: Mastering Algorithms and Future Trends with ID: 14957
+>>> Found book: Mastering Algorithms and Beyond with ID: 14960
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 15116
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 15151
+>>> Found book: Exploring Algorithms with Python with ID: 15199
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 15206
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 15320
+>>> Found book: The Future of Algorithms from Scratch with ID: 15401
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 15402
+>>> Found book: Mastering Algorithms in the Modern World with ID: 15536
+>>> Found book: Innovations in Algorithms in Practice with ID: 15537
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 15655
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 15640
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 15935
+>>> Found book: Mastering Algorithms for Professionals with ID: 15961
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 15988
+>>> Found book: Mastering Algorithms for Professionals with ID: 16055
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 16058
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 16176
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 16179
+>>> Found book: Understanding Algorithms for Beginners with ID: 16222
+>>> Found book: Understanding Algorithms for Beginners with ID: 16237
+>>> Found book: Understanding Algorithms in Practice with ID: 16294
+>>> Found book: Understanding Algorithms with Python with ID: 16313
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 16314
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 16369
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 16438
+>>> Found book: Exploring Algorithms in the Modern World with ID: 16519
+>>> Found book: Mastering Algorithms for Professionals with ID: 16520
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 16675
+>>> Found book: The Complete Handbook of Algorithms for Professionals with ID: 15711
+>>> Found book: Exploring Algorithms in Practice with ID: 15728
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 15764
+>>> Found book: Innovations in Algorithms for Beginners with ID: 15780
+>>> Found book: Innovations in Algorithms for Professionals with ID: 15812
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 15850
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 15895
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 16008
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 16072
+>>> Found book: Understanding Algorithms for Beginners with ID: 16076
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 16079
+>>> Found book: Innovations in Algorithms for Everyone with ID: 16135
+>>> Found book: Mastering Algorithms with Python with ID: 16191
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 16271
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 16317
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 16342
+>>> Found book: Innovations in Algorithms with Python with ID: 16387
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 16405
+>>> Found book: Understanding Algorithms for Beginners with ID: 16564
+>>> Found book: Understanding Algorithms and Applications with ID: 16586
+>>> Found book: Mastering Algorithms and Future Trends with ID: 16833
+>>> Found book: Exploring Algorithms for Professionals with ID: 15737
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 15747
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 15805
+>>> Found book: Mastering Algorithms and Applications with ID: 15873
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 15876
+>>> Found book: Mastering Algorithms for Professionals with ID: 15897
+>>> Found book: The Future of Algorithms and Applications with ID: 15898
+>>> Found book: Exploring Algorithms for Beginners with ID: 16071
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 16140
+>>> Found book: The Essentials of Algorithms for Beginners with ID: 16201
+>>> Found book: The Future of Algorithms for Professionals with ID: 16256
+>>> Found book: Understanding Algorithms and Applications with ID: 16325
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 16352
+>>> Found book: Advanced Techniques in Algorithms from Scratch with ID: 16444
+>>> Found book: Innovations in Algorithms for Professionals with ID: 16561
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 16574
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 16677
+>>> Found book: Innovations in Algorithms in Practice with ID: 18219
+>>> Found book: The Future of Algorithms for Professionals with ID: 16779
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 16800
+>>> Found book: Understanding Algorithms for Beginners with ID: 16818
+>>> Found book: Exploring Algorithms for Everyone with ID: 17030
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 17061
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 17112
+>>> Found book: Mastering Algorithms for Professionals with ID: 17171
+>>> Found book: Exploring Algorithms and Applications with ID: 17199
+>>> Found book: Mastering Algorithms and Beyond with ID: 17242
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 17334
+>>> Found book: Mastering Algorithms in the Modern World with ID: 17351
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 17381
+>>> Found book: The Complete Handbook of Algorithms for Everyone with ID: 17448
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 17467
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 17501
+>>> Found book: Understanding Algorithms for Professionals with ID: 17594
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 17709
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 16587
+>>> Found book: Understanding Algorithms in Practice with ID: 16588
+>>> Found book: The Future of Algorithms in the Modern World with ID: 16760
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 16880
+>>> Found book: Mastering Algorithms for Beginners with ID: 16887
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 16920
+>>> Found book: Mastering Algorithms in the Modern World with ID: 17105
+>>> Found book: The Future of Algorithms for Professionals with ID: 17107
+>>> Found book: Exploring Algorithms with Python with ID: 17131
+>>> Found book: The Complete Handbook of Algorithms in Practice with ID: 17208
+>>> Found book: Innovations in Algorithms for Beginners with ID: 17234
+>>> Found book: The Future of Algorithms and Future Trends with ID: 17261
+>>> Found book: A Comprehensive Guide to Algorithms from Scratch with ID: 17424
+>>> Found book: The Essentials of Algorithms in Practice with ID: 17429
+>>> Found book: The Essentials of Algorithms and Beyond with ID: 17430
+>>> Found book: The Essentials of Algorithms and Applications with ID: 17451
+>>> Found book: Innovations in Algorithms with Python with ID: 17452
+>>> Found book: The Future of Algorithms and Applications with ID: 17544
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 17571
+>>> Found book: A Comprehensive Guide to Algorithms for Beginners with ID: 17633
+>>> Found book: Innovations in Algorithms for Everyone with ID: 17731
+>>> Found book: Mastering Algorithms for Beginners with ID: 17946
+>>> Found book: Understanding Algorithms in Practice with ID: 16844
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 16845
+>>> Found book: Innovations in Algorithms for Professionals with ID: 16974
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 16997
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 17046
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 17073
+>>> Found book: The Future of Algorithms and Applications with ID: 17099
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 17196
+>>> Found book: Exploring Algorithms for Beginners with ID: 17246
+>>> Found book: Innovations in Algorithms for Professionals with ID: 17390
+>>> Found book: Exploring Algorithms and Beyond with ID: 17415
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 17434
+>>> Found book: Innovations in Algorithms for Professionals with ID: 17435
+>>> Found book: Understanding Algorithms and Beyond with ID: 17491
+>>> Found book: The Essentials of Algorithms for Professionals with ID: 17566
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 17586
+>>> Found book: Mastering Algorithms from Scratch with ID: 17724
+>>> Found book: Understanding Algorithms from Scratch with ID: 17783
+>>> Found book: Advanced Techniques in Algorithms for Everyone with ID: 17847
+>>> Found book: Innovations in Algorithms for Everyone with ID: 17873
+>>> Found book: Mastering Algorithms in Practice with ID: 17883
+>>> Found book: Understanding Algorithms from Scratch with ID: 17951
+>>> Found book: Advanced Techniques in Algorithms and Beyond with ID: 18094
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 18153
+>>> Found book: Understanding Algorithms for Professionals with ID: 18235
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 18294
+>>> Found book: The Future of Algorithms and Future Trends with ID: 18296
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 18320
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 18411
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 18416
+>>> Found book: The Essentials of Algorithms in Practice with ID: 18440
+>>> Found book: Innovations in Algorithms for Professionals with ID: 18604
+>>> Found book: Exploring Algorithms for Everyone with ID: 18627
+>>> Found book: A Comprehensive Guide to Algorithms in Practice with ID: 18652
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 18658
+>>> Found book: The Future of Algorithms in the Modern World with ID: 18660
+>>> Found book: The Essentials of Algorithms for Everyone with ID: 18748
+>>> Found book: The Future of Algorithms for Beginners with ID: 18853
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 17649
+>>> Found book: The Future of Algorithms with Python with ID: 17780
+>>> Found book: Exploring Algorithms from Scratch with ID: 17855
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 17902
+>>> Found book: Exploring Algorithms and Applications with ID: 18072
+>>> Found book: Mastering Algorithms and Future Trends with ID: 18149
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 18198
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 18202
+>>> Found book: Innovations in Algorithms and Future Trends with ID: 18229
+>>> Found book: Exploring Algorithms for Professionals with ID: 18252
+>>> Found book: Understanding Algorithms and Beyond with ID: 18309
+>>> Found book: The Essentials of Algorithms in Practice with ID: 18434
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 18465
+>>> Found book: Mastering Algorithms with Python with ID: 18480
+>>> Found book: Innovations in Algorithms for Professionals with ID: 18532
+>>> Found book: Understanding Algorithms with Python with ID: 18538
+>>> Found book: A Comprehensive Guide to Algorithms and Future Trends with ID: 18701
+>>> Found book: Exploring Algorithms in the Modern World with ID: 18709
+>>> Found book: Advanced Techniques in Algorithms and Future Trends with ID: 18783
+>>> Found book: The Future of Algorithms and Applications with ID: 18868
+>>> Found book: Innovations in Algorithms for Everyone with ID: 19011
+>>> Found book: Innovations in Algorithms and Applications with ID: 19042
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 19068
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 19164
+>>> Found book: Mastering Algorithms and Applications with ID: 17911
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 17927
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 17928
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 17955
+>>> Found book: Exploring Algorithms in Practice with ID: 17989
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 17990
+>>> Found book: Innovations in Algorithms for Beginners with ID: 18019
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 18062
+>>> Found book: Practical Insights into Algorithms for Everyone with ID: 18080
+>>> Found book: Advanced Techniques in Algorithms with Python with ID: 18082
+>>> Found book: A Comprehensive Guide to Algorithms in the Modern World with ID: 18140
+>>> Found book: Innovations in Algorithms for Everyone with ID: 18214
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 18247
+>>> Found book: Understanding Algorithms for Beginners with ID: 18277
+>>> Found book: Exploring Algorithms in Practice with ID: 18355
+>>> Found book: Practical Insights into Algorithms from Scratch with ID: 18469
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 18719
+>>> Found book: Mastering Algorithms in the Modern World with ID: 18730
+>>> Found book: Innovations in Algorithms in Practice with ID: 18909
+>>> Found book: Exploring Algorithms and Beyond with ID: 19001
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 19116
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 19189
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 19315
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 19350
+>>> Found book: Advanced Techniques in Algorithms and Applications with ID: 19351
+>>> Found book: Understanding Algorithms with Python with ID: 19392
+>>> Found book: Mastering Algorithms and Future Trends with ID: 19478
+>>> Found book: Exploring Algorithms and Applications with ID: 19482
+>>> Found book: Exploring Algorithms for Beginners with ID: 19498
+>>> Found book: Mastering Algorithms in Practice with ID: 19501
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 19625
+>>> Found book: A Comprehensive Guide to Algorithms and Applications with ID: 19649
+>>> Found book: Innovations in Algorithms in Practice with ID: 19656
+>>> Found book: Understanding Algorithms and Future Trends with ID: 19659
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 19826
+>>> Found book: Innovations in Algorithms for Everyone with ID: 19966
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 19217
+>>> Found book: Mastering Algorithms in Practice with ID: 19237
+>>> Found book: Mastering Algorithms for Professionals with ID: 19252
+>>> Found book: Mastering Algorithms in the Modern World with ID: 19271
+>>> Found book: The Future of Algorithms and Future Trends with ID: 19275
+>>> Found book: Innovations in Algorithms and Applications with ID: 19293
+>>> Found book: Advanced Techniques in Algorithms for Beginners with ID: 19320
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 19342
+>>> Found book: Understanding Algorithms in Practice with ID: 19394
+>>> Found book: Mastering Algorithms and Beyond with ID: 19464
+>>> Found book: Mastering Algorithms and Future Trends with ID: 19493
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 19514
+>>> Found book: Innovations in Algorithms and Applications with ID: 19545
+>>> Found book: A Comprehensive Guide to Algorithms with Python with ID: 19558
+>>> Found book: Practical Insights into Algorithms and Applications with ID: 19708
+>>> Found book: Exploring Algorithms for Everyone with ID: 19761
+>>> Found book: The Essentials of Algorithms from Scratch with ID: 19791
+>>> Found book: The Future of Algorithms for Professionals with ID: 19792
+>>> Found book: Innovations in Algorithms and Applications with ID: 19836
+>>> Found book: Understanding Algorithms with Python with ID: 19859
+>>> Found book: Innovations in Algorithms for Professionals with ID: 19943
+>>> Found book: Understanding Algorithms and Applications with ID: 19985
+>>> Found book: Innovations in Algorithms and Applications with ID: 18900
+>>> Found book: The Essentials of Algorithms and Applications with ID: 18971
+>>> Found book: Advanced Techniques in Algorithms in the Modern World with ID: 19087
+>>> Found book: The Future of Algorithms and Future Trends with ID: 19157
+>>> Found book: Practical Insights into Algorithms and Future Trends with ID: 19243
+>>> Found book: Understanding Algorithms with Python with ID: 19358
+>>> Found book: Understanding Algorithms and Applications with ID: 19382
+>>> Found book: Advanced Techniques in Algorithms for Professionals with ID: 19407
+>>> Found book: Practical Insights into Algorithms in Practice with ID: 19454
+>>> Found book: The Essentials of Algorithms in Practice with ID: 19457
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 19520
+>>> Found book: Practical Insights into Algorithms in the Modern World with ID: 19614
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 19671
+>>> Found book: Practical Insights into Algorithms for Beginners with ID: 19674
+>>> Found book: The Future of Algorithms and Applications with ID: 19719
+>>> Found book: The Complete Handbook of Algorithms and Beyond with ID: 19766
+>>> Found book: Practical Insights into Algorithms for Professionals with ID: 19841
+>>> Found book: Mastering Algorithms for Professionals with ID: 19866
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (D:\Dev_Tools\Maven\apache-maven-3.9.6\mvn_repo\net\bytebuddy\byte-buddy-agent\1.14.16\byte-buddy-agent-1.14.16.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>
